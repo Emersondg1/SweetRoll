@@ -6,13 +6,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/js.js" defer></script>
-  <title>Sweet Roll — Crêpes sucrées & salées faites maison</title>
+  <title>Sweet Roll — Crêpes sucrées & salées faites maison à Cotonou</title>
   <meta name="description"
-    content="Sweet Roll : crêpes sucrées et salées faites maison, à commander en ligne. Livraison rapide à Cotonou." />
+    content="Sweet Roll : crêpes sucrées et salées faites maison, à commander en ligne à Cotonou (Vêdokô). Commande via WhatsApp, livraison rapide, paiement MTN MoMo / Moov Money." />
+
+  <!-- Indexation -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sweet-roll.vercel.app/" />
+  <meta name="theme-color" content="#D98E3A" />
+
+  <!-- Open Graph (partage WhatsApp / Facebook) -->
+  <meta property="og:type" content="restaurant.menu" />
+  <meta property="og:site_name" content="Sweet Roll" />
+  <meta property="og:title" content="Sweet Roll — Crêpes sucrées & salées faites maison à Cotonou" />
+  <meta property="og:description"
+    content="Crêpes sucrées et salées faites maison, à commander en ligne à Cotonou. Commande via WhatsApp, livraison rapide, paiement Mobile Money." />
+  <meta property="og:url" content="https://sweet-roll.vercel.app/" />
+  <meta property="og:image" content="https://sweet-roll.vercel.app/data/crepe.jpeg" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sweet Roll — Crêpes faites maison à Cotonou" />
+  <meta name="twitter:description" content="Crêpes sucrées et salées faites maison, à commander via WhatsApp. Livraison rapide à Cotonou." />
+  <meta name="twitter:image" content="https://sweet-roll.vercel.app/data/crepe.jpeg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
+
+  <!-- Données structurées : aide Google à afficher une fiche riche
+       (horaires, adresse, "ouvert maintenant") dans les résultats. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Sweet Roll",
+    "image": "https://sweet-roll.vercel.app/data/crepe.jpeg",
+    "url": "https://sweet-roll.vercel.app/",
+    "telephone": "+22962117497",
+    "servesCuisine": "Crêperie",
+    "priceRange": "300-1000 FCFA",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Quartier Vêdokô",
+      "addressLocality": "Cotonou",
+      "addressCountry": "BJ"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "22:00"
+    },
+    "menu": "https://sweet-roll.vercel.app/#menu",
+    "acceptsReservations": "False"
+  }
+  </script>
 </head>
 
 <body>
