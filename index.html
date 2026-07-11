@@ -1,527 +1,440 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sweet Roll — Crêpes sucrées & salées faites maison</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/js.js" defer></script>
-    <meta
-      name="description"
-      content="Sweet Roll : crêpes sucrées et salées faites maison, à commander en ligne. Livraison rapide à Cotonou."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav container">
-        <a href="index.html" class="logo">
-          <span class="logo-mark" aria-hidden="true">🥞</span>
-          Sweet Roll
-        </a>
-        <button
-          class="nav-toggle"
-          aria-label="Ouvrir le menu"
-          aria-expanded="false"
-          id="navToggle"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links" id="navLinks">
-          <a href="#menu">Notre carte</a>
-          <a href="#comment-commander">Comment commander</a>
-          <a href="#avis">Avis</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="nav-cta">
-          <a href="#contact" class="btn btn-outline btn-small"
-            >Nous contacter</a
-          >
-          <!-- [1] NAV — bouton "Commander" → WhatsApp -->
-          <a
-            href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-            class="btn btn-primary btn-small"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Commander</a
-          >
-        </div>
-      </nav>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-text">
-          <span class="eyebrow">Fait maison · Cotonou</span>
-          <h1>Le plaisir d'une <em>bonne crêpe</em><br />à chaque bouchée</h1>
-          <p class="lead">
-            Sucrées ou salées, nos crêpes sont préparées à la commande avec des
-            ingrédients frais. Commandez en ligne, savourez, recommencez.
-          </p>
-          <div class="hero-actions">
-            <!-- [2] HERO — bouton principal → WhatsApp -->
-            <a
-              href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Commander maintenant</a
-            >
-            <a href="#menu" class="btn btn-outline">Voir la carte</a>
-          </div>
-          <div class="hero-tags">
-            <span class="tag">🥞 Sucrées</span>
-            <span class="tag">🧀 Salées</span>
-            <span class="tag">🚴 Livraison rapide</span>
-            <span class="tag">👩‍🍳 Fait maison</span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/js.js" defer></script>
+  <title>Sweet Roll — Crêpes sucrées & salées faites maison</title>
+  <meta name="description"
+    content="Sweet Roll : crêpes sucrées et salées faites maison, à commander en ligne. Livraison rapide à Cotonou." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">🥞</span>
+        Sweet Roll
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#menu" data-section="menu">Notre carte</a>
+        <a href="#comment-commander" data-section="comment-commander">Comment commander</a>
+        <a href="#avis" data-section="avis">Avis</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-outline btn-small">Nous contacter</a>
+        <a href="https://wa.me/22962117497?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
+          class="btn btn-primary btn-small" target="_blank" rel="noopener noreferrer">Commander</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <span class="eyebrow">Fait maison · Cotonou</span>
+        <h1>Le plaisir d'une <em>bonne crêpe</em><br />à chaque bouchée</h1>
+        <p class="lead">
+          Sucrées ou salées, nos crêpes sont préparées à la commande avec des
+          ingrédients frais. Choisissez vos crêpes ci-dessous, on prépare le message pour vous.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Voir la carte</a>
+          <a href="#comment-commander" class="btn btn-outline">Comment ça marche</a>
         </div>
-        <div class="hero-visual">
-          <div class="crepe-fold">
-            <div class="crepe-disc"></div>
-            <div class="crepe-filling"></div>
-            <div class="crepe-fold-piece"></div>
-            <div class="crepe-badge">2 crêpes<br />+ 1 jus<br />offert</div>
-          </div>
+        <div class="hero-tags">
+          <span class="tag">🥞 Sucrées</span>
+          <span class="tag">🧀 Salées</span>
+          <span class="tag">🚴 Livraison rapide</span>
+          <span class="tag">👩‍🍳 Fait maison</span>
         </div>
       </div>
-    </section>
 
-    <!-- MENU -->
-    <section class="section" id="menu">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Notre carte</span>
-          <h2>Choisissez votre crêpe</h2>
-          <p>
-            Chaque crêpe est préparée minute, avec de bons produits et beaucoup
-            d'amour.
-          </p>
-        </div>
-
-        <div class="menu-grid">
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <span class="menu-card-pill sweet">Sucrée</span>
-              <span aria-hidden="true">🍫</span>
-            </div>
-            <div class="menu-card-body">
-              <h3>Crêpe Chocolat</h3>
-              <p>
-                Pâte fine et fondante garnie de chocolat fondu, un classique
-                gourmand qui ne déçoit jamais.
-              </p>
-              <div class="menu-card-footer">
-                <span class="price">500 FCFA</span>
-                <!-- [3] MENU CARDS — chaque bouton → WhatsApp avec nom du plat -->
-                <a
-                  href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%0A%0AJe%20souhaite%20commander%20%3A%0A👉%20*Crêpe%20Chocolat*%20—%20500%20FCFA%0A%0APouvez-vous%20confirmer%20la%20disponibilité%20%3F%20Merci%20😊"
-                  class="btn btn-primary btn-small"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Commander</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <span class="menu-card-pill sweet">Sucrée</span>
-              <span aria-hidden="true">🍓</span>
-            </div>
-            <div class="menu-card-body">
-              <h3>Crêpe Sucrée</h3>
-              <p>
-                Sucre vanillé, confiture maison et un trait de citron pour une
-                touche fraîche et légère.
-              </p>
-              <div class="menu-card-footer">
-                <span class="price">300 FCFA</span>
-                <a
-                  href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%0A%0AJe%20souhaite%20commander%20%3A%0A👉%20*Crêpe%20Sucrée*%20—%20300%20FCFA%0A%0APouvez-vous%20confirmer%20la%20disponibilité%20%3F%20Merci%20😊"
-                  class="btn btn-primary btn-small"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Commander</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <span class="menu-card-pill veg">Salée</span>
-              <span aria-hidden="true">🧀</span>
-            </div>
-            <div class="menu-card-body">
-              <h3>Crêpe Jambon / Fromage</h3>
-              <p>
-                Jambon de qualité et fromage fondant, gratinés pour un repas
-                réconfortant et savoureux.
-              </p>
-              <div class="menu-card-footer">
-                <span class="price">800 FCFA</span>
-                <a
-                  href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%0A%0AJe%20souhaite%20commander%20%3A%0A👉%20*Crêpe%20Jambon%20%2F%20Fromage*%20—%20800%20FCFA%0A%0APouvez-vous%20confirmer%20la%20disponibilité%20%3F%20Merci%20😊"
-                  class="btn btn-primary btn-small"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Commander</a
-                >
-              </div>
-            </div>
-          </article>
-
-          <article class="menu-card">
-            <div class="menu-card-img">
-              <span class="menu-card-pill veg">Salée</span>
-              <span aria-hidden="true">🥩</span>
-            </div>
-            <div class="menu-card-body">
-              <h3>Crêpe Viande Hachée</h3>
-              <p>
-                Viande hachée mijotée aux épices, oignons et fromage, pour une
-                crêpe généreuse et complète.
-              </p>
-              <div class="menu-card-footer">
-                <span class="price">1 000 FCFA</span>
-                <a
-                  href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%0A%0AJe%20souhaite%20commander%20%3A%0A👉%20*Crêpe%20Viande%20Hachée*%20—%201%20000%20FCFA%0A%0APouvez-vous%20confirmer%20la%20disponibilité%20%3F%20Merci%20😊"
-                  class="btn btn-primary btn-small"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Commander</a
-                >
-              </div>
-            </div>
-          </article>
+      <div class="hero-visual">
+        <div class="crepe-fold">
+          <div class="crepe-disc"></div>
+          <div class="crepe-filling"></div>
+          <div class="crepe-fold-piece"></div>
+          <div class="crepe-badge"> crêpes + jus </div>
         </div>
       </div>
-    </section>
-
-    <!-- DRINKS + OFFER -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="menu-grid" style="grid-template-columns: 1.2fr 1fr">
-          <div class="drinks-panel">
-            <h3>🥤 Boissons & jus</h3>
-            <ul class="drinks-list">
-              <li>
-                <span>Yaourt glacé</span><span class="dprice">600 FCFA</span>
-              </li>
-              <li><span>Bissap</span><span class="dprice">500 FCFA</span></li>
-              <li>
-                <span>Boissons gazeuses</span
-                ><span class="dprice">A partir de 500 FCFA</span>
-              </li>
-            </ul>
-          </div>
-          <!-- [4] OFFRE DU JOUR → WhatsApp avec mention de l'offre -->
-          <div class="offer-card">
-            <span class="eyebrow">Offre du jour</span>
-            <h3>3 Crêpes + 1 jus offert</h3>
-            <p>
-              Combinez deux crêpes au choix et recevez un jus gratuit avec votre
-              commande, aujourd'hui seulement.
-            </p>
-            <a
-              href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%0A%0AJe%20souhaite%20profiter%20de%20l'offre%20du%20jour%20%3A%0A👉%20*3%20Crêpes%20%2B%201%20jus%20offert*%0A%0APouvez-vous%20me%20confirmer%20l'offre%20%3F%20Merci%20😊"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Profiter de l'offre</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW TO ORDER -->
-    <section class="section" id="comment-commander">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Simple et rapide</span>
-          <h2>Comment commander</h2>
-          <p>En quelques étapes, votre crêpe préférée arrive jusqu'à vous.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">01</div>
-            <h4>Choisissez votre crêpe</h4>
-            <p>
-              Parcourez notre carte sucrée ou salée et sélectionnez vos favoris.
-            </p>
-          </div>
-          <div class="step">
-            <div class="step-num">02</div>
-            <h4>Cliquez sur Commander</h4>
-            <p>
-              WhatsApp s'ouvre avec votre commande déjà pré-remplie — plus
-              simple, plus rapide.
-            </p>
-          </div>
-          <!-- [5] STEP 03 — paiement mis à jour -->
-          <div class="step">
-            <div class="step-num">03</div>
-            <h4>Choisissez votre paiement</h4>
-            <p>Réglez à la livraison en cash, par MTN MoMo ou Moov Money.</p>
-          </div>
-          <div class="step">
-            <div class="step-num">04</div>
-            <h4>Recevez votre commande</h4>
-            <p>
-              Notre livreur vous apporte vos crêpes encore chaudes, rapidement.
-            </p>
-          </div>
-        </div>
-
-        <div class="delivery-banner">
-          <div class="truck" aria-hidden="true">🛵</div>
-          <div class="delivery-banner-text">
-            <h4>Livraison rapide</h4>
-            <p>
-              Paiement à la livraison — cash, MTN MoMo ou Moov Money acceptés.
-            </p>
-          </div>
-          <a
-            href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Commander maintenant</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section section-alt" id="avis">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Ils ont aimé</span>
-          <h2>Ce que disent nos clients</h2>
-          <p>
-            Des centaines de crêpes livrées chaque semaine, et des clients qui
-            reviennent.
-          </p>
-        </div>
-        <div class="testimonials-grid">
-          <div class="testimonial">
-            <div class="stars">★★★</div>
-            <p class="quote">
-              La crêpe au chocolat est exactement comme je l'aime : fondante et
-              généreuse. Livraison très rapide en plus.
-            </p>
-            <div class="author">
-              <span class="author-avatar">A</span>
-              Aïcha M.
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="stars">★★★★</div>
-            <p class="quote">
-              La crêpe viande hachée est devenue mon repas du soir préféré. Très
-              copieuse pour le prix.
-            </p>
-            <div class="author">
-              <span class="author-avatar">R</span>
-              Romaric K.
-            </div>
-          </div>
-          <div class="testimonial">
-            <div class="stars">★★</div>
-            <p class="quote">
-              J'ai testé l'offre du jour avec le bissap offert, parfait pour un
-              goûter en famille. On recommande !
-            </p>
-            <div class="author">
-              <span class="author-avatar">F</span>
-              Florence A.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LOCATION / CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="location-grid">
-          <div class="location-info">
-            <span class="eyebrow">Nous trouver</span>
-            <h3>Une question, une commande spéciale ?</h3>
-            <ul>
-              <li>
-                <span class="icon" aria-hidden="true">📍</span>
-                <div>
-                  <strong>Adresse</strong>
-                  <span>Quartier Vêdokô, Cotonou, Bénin</span>
-                </div>
-              </li>
-              <li>
-                <span class="icon" aria-hidden="true">📞</span>
-                <div>
-                  <strong>Téléphone</strong>
-                  <span>+229 69 16 16 42</span>
-                </div>
-              </li>
-              <li>
-                <span class="icon" aria-hidden="true">💬</span>
-                <div>
-                  <strong>WhatsApp</strong>
-                  <span>Commandez directement par message</span>
-                </div>
-              </li>
-              <!-- [6] CONTACT — infos paiement Mobile Money -->
-              <li>
-                <span class="icon" aria-hidden="true">💳</span>
-                <div>
-                  <strong>Paiement Mobile Money</strong>
-                  <span>MTN MoMo · +229 69 16 16 42</span><br />
-                  <span>Moov Money · +229 69 16 16 42</span>
-                </div>
-              </li>
-              <li>
-                <span class="icon" aria-hidden="true">🕒</span>
-                <div>
-                  <strong>Horaires</strong>
-                  <span>Tous les jours, 11h00 — 22h00</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="map-frame"
-            role="region"
-            aria-label="Carte de localisation de Sweet Roll à Cotonou"
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.133926371102!2d2.394543573250406!3d6.376707093613601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355c3dc49fced%3A0x91e80e88f89b922a!2sCarrefour%20LA%20VIE!5e0!3m2!1sfr!2sbj!4v1781567314333!5m2!1sfr!2sbj"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section" style="padding-top: 0">
-      <div class="container">
-        <div class="cta-band">
-          <h2>Une envie de crêpe maintenant ?</h2>
-          <p>
-            Commandez via WhatsApp en moins d'une minute, et profitez de l'offre
-            du jour.
-          </p>
-          <a
-            href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Commander maintenant</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <a href="index.html" class="logo">
-              <span class="logo-mark" aria-hidden="true">🥞</span>
-              Sweet Roll
-            </a>
-            <p>
-              Crêpes sucrées et salées faites maison, préparées avec soin et
-              livrées rapidement à Cotonou.
-            </p>
-            <div class="social-links" style="margin-top: 18px">
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="Instagram">📸</a>
-              <a
-                href="https://wa.me/22969161642"
-                aria-label="WhatsApp"
-                target="_blank"
-                rel="noopener noreferrer"
-                >💬</a
-              >
-            </div>
-          </div>
-          <div class="footer-col">
-            <h5>Navigation</h5>
-            <ul>
-              <li><a href="#menu">Notre carte</a></li>
-              <li><a href="#comment-commander">Comment commander</a></li>
-              <li><a href="#avis">Avis clients</a></li>
-              <li>
-                <a
-                  href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Commander</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5>Informations</h5>
-            <ul>
-              <li><a href="#">Politique de livraison</a></li>
-              <li><a href="#">Conditions générales</a></li>
-              <li><a href="#">Confidentialité</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h5>Contact</h5>
-            <ul class="footer-contact">
-              <li><span class="icon">📍</span> Quartier Vêdokô, Cotonou</li>
-              <li><span class="icon">📞</span> +229 69 16 16 42</li>
-              <li>
-                <span class="icon">💳</span> MTN / Moov : +229 69 16 16 42
-              </li>
-              <li><span class="icon">🕒</span> Tous les jours, 11h — 22h</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span>© 2026 Sweet Roll. Tous droits réservés.</span>
-          <span>Conçu avec 🥞 à Cotonou</span>
-        </div>
-      </div>
-    </footer>
-
-    <a
-      href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-      class="whatsapp-float"
-      aria-label="Commander sur WhatsApp"
-      target="_blank"
-      rel="noopener noreferrer"
-      >💬</a
-    >
-
-    <div class="mobile-actionbar">
-      <a href="#menu" class="btn btn-outline">Voir la carte</a>
-      <a
-        href="https://wa.me/22969161642?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
-        class="btn btn-primary"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Commander</a
-      >
     </div>
-  </body>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Notre carte</span>
+        <h2>Choisissez votre crêpe</h2>
+        <p>
+          Ajoutez une ou plusieurs crêpes à votre commande : on regroupe tout
+          dans un seul message WhatsApp à la fin.
+        </p>
+      </div>
+      <!-- 
+      <div class="menu-filters" role="tablist" aria-label="Filtrer la carte">
+        <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+        <button type="button" class="filter-btn" data-filter="sucree" role="tab" aria-selected="false">🥞 Sucrées</button>
+        <button type="button" class="filter-btn" data-filter="salee" role="tab" aria-selected="false">🧀 Salées</button>
+      </div> -->
+
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="sucree" data-name="Crêpe Chocolat" data-price="500">
+          <div class="menu-card-img">
+            <!-- <span class="menu-card-pill sweet"></span> -->
+            <img src="data/crepe.jpeg" alt="Crêpe au chocolat fondu roulée">
+          </div>
+          <div class="menu-card-body">
+            <h3>Crêpe Chocolat</h3>
+            <p>
+              Pâte fine et fondante garnie de chocolat fondu, un classique
+              gourmand qui ne déçoit jamais.
+            </p>
+            <div class="menu-card-footer">
+              <span class="price">500 FCFA</span>
+              <div class="qty-control" role="group" aria-label="Quantité — Crêpe Chocolat">
+                <button type="button" class="qty-btn qty-minus" aria-label="Diminuer la quantité">−</button>
+                <span class="qty-value" aria-live="polite">0</span>
+                <button type="button" class="qty-btn qty-plus" aria-label="Augmenter la quantité">+</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-small btn-block btn-add" disabled>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="sucree" data-name="Crêpe Sucrée" data-price="300">
+          <div class="menu-card-img">
+            <!-- <span class="menu-card-pill sweet"></span> -->
+            <img src="data/crepe2.png" alt="Crêpe sucrée au sucre vanillé et confiture">
+          </div>
+          <div class="menu-card-body">
+            <h3>Crêpe Sucrée</h3>
+            <p>
+              Sucre vanillé, confiture maison et un trait de citron pour une
+              touche fraîche et légère.
+            </p>
+            <div class="menu-card-footer">
+              <span class="price">300 FCFA</span>
+              <div class="qty-control" role="group" aria-label="Quantité — Crêpe Sucrée">
+                <button type="button" class="qty-btn qty-minus" aria-label="Diminuer la quantité">−</button>
+                <span class="qty-value" aria-live="polite">0</span>
+                <button type="button" class="qty-btn qty-plus" aria-label="Augmenter la quantité">+</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-small btn-block btn-add" disabled>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="salee" data-name="Crêpe Jambon / Fromage" data-price="800">
+          <div class="menu-card-img">
+            <!-- <span class="menu-card-pill sweet"></span> -->
+            <img src="data/crepeJ.jpg" alt="Crêpe gratinée au jambon et fromage">
+          </div>
+          <div class="menu-card-body">
+            <h3>Crêpe Jambon / Fromage</h3>
+            <p>
+              Jambon de qualité et fromage fondant, gratinés pour un repas
+              réconfortant et savoureux.
+            </p>
+            <div class="menu-card-footer">
+              <span class="price">800 FCFA</span>
+              <div class="qty-control" role="group" aria-label="Quantité — Crêpe Jambon Fromage">
+                <button type="button" class="qty-btn qty-minus" aria-label="Diminuer la quantité">−</button>
+                <span class="qty-value" aria-live="polite">0</span>
+                <button type="button" class="qty-btn qty-plus" aria-label="Augmenter la quantité">+</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-small btn-block btn-add" disabled>Ajouter au panier</button>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="salee" data-name="Crêpe Viande Hachée" data-price="1000">
+          <div class="menu-card-img">
+            <!-- <span class="menu-card-pill sweet"></span> -->
+            <img src="data/crepeH1.jpg" alt="Crêpe garnie de viande hachée épicée">
+          </div>
+          <div class="menu-card-body">
+            <h3>Crêpe Viande Hachée</h3>
+            <p>
+              Viande hachée mijotée aux épices, oignons et fromage, pour une
+              crêpe généreuse et complète.
+            </p>
+            <div class="menu-card-footer">
+              <span class="price">1 000 FCFA</span>
+              <div class="qty-control" role="group" aria-label="Quantité — Crêpe Viande Hachée">
+                <button type="button" class="qty-btn qty-minus" aria-label="Diminuer la quantité">−</button>
+                <span class="qty-value" aria-live="polite">0</span>
+                <button type="button" class="qty-btn qty-plus" aria-label="Augmenter la quantité">+</button>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-small btn-block btn-add" disabled>Ajouter au panier</button>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-empty" id="menuEmpty" hidden>Aucune crêpe dans cette catégorie pour le moment.</p>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section class="section" id="comment-commander">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Simple et rapide</span>
+        <h2>Comment commander</h2>
+        <p>En quelques étapes, votre crêpe préférée arrive jusqu'à vous.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h4>Choisissez vos crêpes</h4>
+          <p>
+            Parcourez la carte, ajustez les quantités et ajoutez-les à votre panier.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h4>Validez sur WhatsApp</h4>
+          <p>
+            Un seul message récapitulatif s'ouvre, déjà pré-rempli avec tout votre panier.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h4>Choisissez votre paiement</h4>
+          <p>Réglez à la livraison en cash, par MTN MoMo ou Moov Money.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h4>Recevez votre commande</h4>
+          <p>
+            Notre livreur vous apporte vos crêpes encore chaudes, rapidement.
+          </p>
+        </div>
+      </div>
+
+      <div class="delivery-banner">
+        <div class="truck" aria-hidden="true">🛵</div>
+        <div class="delivery-banner-text">
+          <h4>Livraison rapide</h4>
+          <p>
+            Paiement à la livraison — cash, MTN MoMo ou Moov Money acceptés.
+          </p>
+        </div>
+        <a href="#menu" class="btn btn-primary">Voir la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-alt" id="avis">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Ils ont aimé</span>
+        <h2>Ce que disent nos clients</h2>
+        <p>
+          Des dizaines de crêpes livrées chaque semaine, et des clients qui
+          reviennent.
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="quote">
+            La crêpe au chocolat est exactement comme je l'aime : fondante et
+            généreuse. Livraison très rapide en plus.
+          </p>
+          <div class="author">
+            <span class="author-avatar">A</span>
+            Aïcha M.
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
+          <p class="quote">
+            La crêpe viande hachée est devenue mon repas du soir préféré. Très
+            copieuse pour le prix.
+          </p>
+          <div class="author">
+            <span class="author-avatar">R</span>
+            Romaric K.
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="stars" aria-label="4 étoiles sur 5">★★★★☆</div>
+          <p class="quote">
+            Le panier WhatsApp facilite tout : on choisit, on valide, et c'est
+            parti. Parfait pour un goûter en famille.
+          </p>
+          <div class="author">
+            <span class="author-avatar">F</span>
+            Florence A.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION / CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info">
+          <span class="eyebrow">Nous trouver</span>
+          <h3>Une question, une commande spéciale ?</h3>
+          <ul>
+            <li>
+              <span class="icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Adresse</strong>
+                <span>Quartier Vêdokô, Cotonou, Bénin</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Téléphone</strong>
+                <span>22962117497</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Commandez directement par message</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">💳</span>
+              <div>
+                <strong>Paiement Mobile Money</strong>
+                <span>MTN MoMo : 22962117497</span>
+              </div>
+            </li>
+            <li>
+              <span class="icon" aria-hidden="true">🕒</span>
+              <div>
+                <strong>Horaires</strong>
+                <span> Lundi au Samedi : 09h00 — 22h00</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="map-frame" role="region" aria-label="Carte de localisation de Sweet Roll à Cotonou">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.133926371102!2d2.394543573250406!3d6.376707093613601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355c3dc49fced%3A0x91e80e88f89b922a!2sCarrefour%20LA%20VIE!5e0!3m2!1sfr!2sbj!4v1781567314333!5m2!1sfr!2sbj"
+            width="600" height="450" style="border: 0" loading="lazy"
+            title="Localisation Sweet Roll"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Une envie de crêpe maintenant ?</h2>
+        <p>
+          Composez votre commande sur la carte et validez en un clic via WhatsApp.
+        </p>
+        <a href="#menu" class="btn btn-primary">Voir la carte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark" aria-hidden="true">🥞</span>
+            Sweet Roll
+          </a>
+          <p>
+            Crêpes sucrées et salées faites maison, préparées avec soin et
+            livrées rapidement à Cotonou.
+          </p>
+          <div class="social-links" style="margin-top: 18px">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="https://wa.me/22962117497" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">💬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#menu">Notre carte</a></li>
+            <li><a href="#comment-commander">Comment commander</a></li>
+            <li><a href="#avis">Avis clients</a></li>
+            <li>
+              <a href="https://wa.me/22962117497?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
+                target="_blank" rel="noopener noreferrer">Commander</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Informations</h5>
+          <ul>
+            <li><a href="#">Politique de livraison</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Confidentialité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li><span class="icon">📍</span> Quartier Vêdokô, Cotonou</li>
+            <li><span class="icon">💳</span> MTN : 22962117497</li>
+            <li><span class="icon">🕒</span> Lundi au Samedi : 09h00—22h00 </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sweet Roll. Tous droits réservés.</span>
+        <span> 🥞 Conçu à Cotonou</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant (rempli en JS) -->
+   <!-- <a href="https://wa.me/22962117497" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Contacter Sweet Roll sur WhatsApp">💬</a> -->  
+
+  <!-- Barre panier flottante -->
+  <div class="panier-bar" id="panierBar">
+    <div class="panier-bar-inner">
+      <div class="panier-summary">
+        <span class="panier-count" id="panierCount">0 article</span>
+        <span class="panier-total" id="panierTotal">0 FCFA</span>
+      </div>
+      <div class="panier-actions">
+        <button type="button" class="btn btn-primary btn-panier" id="panierCommander">Commander 💬</button>
+        <button type="button" class="panier-clear" id="panierClear" aria-label="Vider le panier" title="Vider le panier">🗑</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-actionbar">
+    <a href="#menu" class="btn btn-outline">Voir la carte</a>
+    <a href="https://wa.me/22962117497?text=🥞%20Bonjour%20Sweet%20Roll%20!%20Je%20souhaite%20passer%20une%20commande%20😊"
+      class="btn btn-primary" target="_blank" rel="noopener noreferrer">Commander</a>
+  </div>
+</body>
+
 </html>
